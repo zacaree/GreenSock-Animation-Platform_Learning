@@ -15,7 +15,9 @@ body {
 }
 
 .box {
+  position: relative;
+  margin: 2rem;
   width: 100px;
   height: 100px;
-  background-color: aquamarine;
+  background-color: tomato;
 }
