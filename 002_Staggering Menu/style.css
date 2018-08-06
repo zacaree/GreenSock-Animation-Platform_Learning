@@ -1,0 +1,78 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient( 135deg, #5EFCE8 0%, #736EFE 100%);
+}
+
+.btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 10;
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+  line-height: 6rem;
+  vertical-align: center;
+  border-radius: 3rem;
+  user-select: none;
+  cursor: pointer;
+  font-size: 3rem;
+  transition: background 0.1s ease-in-out;
+}
+
+.btnClose {
+  z-index: 9;
+  transform: translateX(70px);
+  opacity: 0;
+}
+
+.btnOpen:hover {
+  background-color: #fff;
+}
+
+.btnClose:hover {
+  background-color: #5EFCE8;
+}
+
+ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 10rem 0 0;
+  list-style: none;
+  background-color: white;
+  transform: translateX(300px);
+}
+
+li {
+  position: relative;
+  font-size: 2rem;
+  padding: 2rem 0 2rem 4rem;
+  user-select: none;
+  cursor: pointer;
+  transition: background 0.2s ease-in;
+}
+
+li:hover {
+  background-color: #5EFCE8;
+}
