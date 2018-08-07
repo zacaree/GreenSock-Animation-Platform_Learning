@@ -25,15 +25,14 @@ body {
   top: 2rem;
   right: 2rem;
   z-index: 10;
-  width: 6rem;
-  height: 6rem;
-  text-align: center;
-  line-height: 6rem;
-  vertical-align: center;
-  border-radius: 3rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
   user-select: none;
   cursor: pointer;
-  font-size: 3rem;
   transition: background 0.1s ease-in-out;
 }
 
