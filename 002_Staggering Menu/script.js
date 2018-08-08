@@ -10,24 +10,24 @@ const tl = new TimelineMax({paused: true});
 
 tl.timeScale(1);
 
-tl.to('h1', 0.5, { opacity: 0 })
+tl.to('h1', 0.3, { opacity: 0 })
 
   .to(btnOpen, 0.5, {
     x: -300,
     opacity: 0,
-    ease: Power2.easeOut,
+    ease: Power2.easeInOut,
   }, '-=0.5')
 
   .to('ul', 0.5, {
     x: 0,
-    ease: Power2.easeOut,
+    ease: Power2.easeInOut,
   }, '-=0.5')
 
   .to(btnClose, 0.5, {
     x: 0,
     opacity: 1,
     rotation: 360,
-    ease: Power1.easeOut,
+    ease: Power1.easeInOut,
   }, '-=0.5')
 
 
@@ -35,7 +35,7 @@ tl.to('h1', 0.5, { opacity: 0 })
     opacity: 0,
     x: 70,
     ease: Back.easeOut,
-  }, 0.1, '-=0.4');
+  }, 0.06, '-=0.18');
 
 
 // ---------------
